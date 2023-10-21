@@ -13,9 +13,11 @@ directories:
 	-mkdir tmp
 	-mkdir data
 
-download:
-	curl "https://www.imf.org/external/datamapper/PCPIPCH@WEO/WEOWORLD?year=2023" -o tmp/inflation.json
+downloads:
+	curl https://www.imf.org/external/datamapper/api/v1/PCPIPCH?periods=2023 -o tmp/inflation.json
 	curl "https://www.imf.org/external/datamapper/api/v1/countries" -o tmp/countries.json 
+
+
 
 
 
