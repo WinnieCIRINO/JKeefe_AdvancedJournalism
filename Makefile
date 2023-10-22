@@ -1,6 +1,6 @@
 # Here's where we'll put our Make commands
 greeting:
-	echo 'hello world'
+	echo 'hello'
 
 math:
 	expr 2 + 2
